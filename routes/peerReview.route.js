@@ -6,7 +6,7 @@ const { createPeerReview, deletePeerReview, getPeerReview, updatePeerReview } = 
 
 router.post('/', createPeerReview);
 router.delete('/:id', deletePeerReview);
-router.get('/:id', getPeerReview);
+router.get('/:memberId', getPeerReview);
 router.patch('/:id', updatePeerReview);
 
 module.exports = router;
